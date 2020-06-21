@@ -1,0 +1,3 @@
+FROM tomcat:8.0-alpine
+COPY ./JAVAWEB92 /usr/local/tomcat/webapps
+EXPOSE 8080
