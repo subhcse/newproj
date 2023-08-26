@@ -1,0 +1,6 @@
+import requests
+import json
+response = requests.get("https://www.travel-advisory.info/api")
+data = response.json()
+with open("data.json", "w") as f:
+    json.dump(data, f)
